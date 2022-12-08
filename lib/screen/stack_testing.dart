@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
+
 class StackTesting extends StatelessWidget {
   const StackTesting({super.key});
 
@@ -28,6 +29,7 @@ class StackTesting extends StatelessWidget {
             ),
             Positioned(
               left: 130,
+              right: 130,
               top: -50,
               child: Image.asset("images/baloon.com.png",
                   height: MediaQuery.of(context).size.height * 0.2,
