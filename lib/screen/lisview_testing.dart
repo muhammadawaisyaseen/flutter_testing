@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter_application_2/screen/stack_testing.dart';
 
 class ListviewTesing extends StatelessWidget {
   const ListviewTesing({super.key});
@@ -14,13 +16,15 @@ class ListviewTesing extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.only(left: 10, right: 10, top: 10),
         child: ListView.builder(
-          itemCount: 70,
+          itemCount: 60,
           itemBuilder: (BuildContext context, index) {
-            return const ListTile(
+            return ListTile(
               leading: Text("SAMSUNG"),
               trailing: Text("samsung"),
-              
-              // hoverColor: Colors.red,
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => StackTesting()));
+              },
             );
           },
         ),
