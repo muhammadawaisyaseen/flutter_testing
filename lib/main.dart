@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/screen/home_screen.dart';
-
-import 'screen/stack_testing.dart';
+import 'package:flutter_application_2/screen/lisview_testing.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: StackTesting(),
+      home: const ListviewTesing(),
     );
   }
 }
