@@ -14,12 +14,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
+
       theme: ThemeData(
         primarySwatch: Colors.blue,
         iconTheme: IconThemeData(color: Colors.pink),
         appBarTheme: AppBarTheme(backgroundColor: Colors.green),
       ),
-      home: const ListviewTesing(),
+      home: ListviewTesing(),
     );
   }
 }
